@@ -171,3 +171,45 @@ https://github.com/Mr-Moosa-official/Interview-Ace
 This is a NextJS starter which is made  in Firebase Studio.
 
 To get started, take a look at src/app/page.tsx.
+This structure is designed for modularity and scalability :
+.
+├── src
+│   ├── app
+│   │   ├── (app)                # Authenticated routes
+│   │   │   ├── dashboard/page.tsx
+│   │   │   └── practice/page.tsx
+│   │   ├── (auth)               # Public routes
+│   │   │   └── page.tsx         # Landing/Login page
+│   │   ├── layout.tsx
+│   │   └── globals.css
+│   ├── ai
+│   │   ├── flows/
+│   │   │   ├── generate-interview-questions.ts
+│   │   │   ├── provide-feedback-on-answer.ts
+│   │   │   └── personalize-insights.ts
+│   │   ├── genkit.ts
+│   │   └── dev.ts
+│   ├── components
+│   │   ├── auth/LoginButton.tsx
+│   │   ├── dashboard/PerformanceChart.tsx
+│   │   ├── practice/InterviewContainer.tsx
+│   │   ├── practice/InterviewSetup.tsx
+│   │   ├── practice/InterviewPractice.tsx
+│   │   ├── practice/InterviewResults.tsx
+│   │   ├── layout/Header.tsx
+│   │   └── ui/                  # ShadCN components
+│   ├── firebase
+│   │   ├── auth/use-user.tsx
+│   │   ├── firestore/use-collection.tsx
+│   │   ├── firestore/use-doc.tsx
+│   │   ├── config.ts
+│   │   ├── provider.tsx
+│   │   ├── client-provider.tsx
+│   │   └── index.ts
+│   ├── lib
+│   │   ├── types.ts
+│   │   └── utils.ts
+│   └── docs
+│       └── backend.json         # <-- Our Database Blueprint
+├── package.json
+└── tailwind.config.ts
