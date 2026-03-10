@@ -4,7 +4,7 @@ Interview Ace is an AI-driven interview preparation platform designed to help us
 
 🚀 What It Does
 
-Interview Ace acts as a personal interview coach, combining:
+Interview  Ace acts as a personal interview coach, combining:
 
 Interview question simulation
 
